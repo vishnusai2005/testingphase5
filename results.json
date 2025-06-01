@@ -1,0 +1,220 @@
+{
+  "test_case_results": [
+    {
+      "test_case_id": "NJSCADIJBI_TEST_1",
+      "evaluation_result": "CORRECT",
+      "title": "An Express instance should be exported from the 'app.js' file using the default export syntax",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_2",
+      "evaluation_result": "CORRECT",
+      "title": "The POST request with path '/register/' should return 'User already exists' as a response if the username already exists",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_3",
+      "evaluation_result": "CORRECT",
+      "title": "A user should not be created if the username already exists in database",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_4",
+      "evaluation_result": "CORRECT",
+      "title": "The POST request with path '/register/' should return 'Password is too short' as a response if the registrant provides a password with less than 6 characters",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_5",
+      "evaluation_result": "CORRECT",
+      "title": "The POST request with path '/register/' should return 'User created successfully' text as a response for a successful registration",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_6",
+      "evaluation_result": "CORRECT",
+      "title": "The password should be encrypted before creating a user in the database",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_7",
+      "evaluation_result": "CORRECT",
+      "title": "The user should be created in the database upon the success of the request with path '/register/'",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_8",
+      "evaluation_result": "CORRECT",
+      "title": "The POST request with path '/login/' should return 'Invalid user' text as a response for an unregistered user",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_9",
+      "evaluation_result": "CORRECT",
+      "title": "The POST request with path '/login/' should return 'Invalid password' text as a response if the user provides an incorrect password",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_10",
+      "evaluation_result": "CORRECT",
+      "title": "The POST request with path '/login/' should return 'JWT Token' as a response if the user provides correct credentials",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_11",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/user/tweets/feed/' with invalid JWT token should return status code as '401' and 'Invalid JWT Token' text as a response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_12",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/user/tweets/feed/' with valid JWT token should return the latest 4 tweets of people whom the user follows",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_13",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/user/following/' without JWT token should return status code as '401' and 'Invalid JWT Token' text as a response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_14",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/user/following/' with valid JWT token should return the list of all names of people whom the user follows",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_15",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/user/followers/' without JWT token should return status code as '401' and 'Invalid JWT Token' text as a response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_16",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/user/followers/' with valid JWT token should return the list of all names of people who follows the user",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_17",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/user/tweets/' without JWT token should return status code as '401' and 'Invalid JWT Token' text as a response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_18",
+      "evaluation_result": "INCORRECT",
+      "title": "The GET request to the path '/user/tweets/' with valid JWT token should return the list of all tweets of the user",
+      "errorMessages": [
+        "TypeError: Cannot read properties of undefined (reading 'user_id')"
+      ]
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_19",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/tweets/:tweetId/' without JWT token should return status code as '401' and 'Invalid JWT Token' text as a response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_20",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/tweets/:tweetId/' with valid JWT token should return the `Invalid Request` text if the user requests a tweet other than the users he is following",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_21",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/tweets/:tweetId/' with valid JWT token should return the tweet",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_22",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/tweets/:tweetId/likes/' without JWT token should return status code as '401' and 'Invalid JWT Token' text as a response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_23",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/tweets/:tweetId/likes/' with valid JWT token should return the `Invalid Request` text if the user requests a tweet other than the users he is following",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_24",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/tweets/:tweetId/likes/' with valid JWT token and should return the list of usernames who liked the tweet",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_25",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/tweets/:tweetId/replies/' without JWT token should return status code as '401' and 'Invalid JWT Token' text as a response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_26",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/tweets/:tweetId/replies/' with valid JWT token should return the `Invalid Request` text if the user requests a tweet other than the users he is following",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_27",
+      "evaluation_result": "CORRECT",
+      "title": "The GET request to the path '/tweets/:tweetId/replies/' with valid JWT token and should return tweet and the list of all replies",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_28",
+      "evaluation_result": "CORRECT",
+      "title": "The POST request to the path '/user/tweets/' without JWT token should return status code as '401' and 'Invalid JWT Token' text as a response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_29",
+      "evaluation_result": "INCORRECT",
+      "title": "The POST request to the path '/user/tweets/' with valid JWT token should return `Created a Tweet` text as a response upon success",
+      "errorMessages": [
+        "TypeError: Cannot read properties of undefined (reading 'user_id')"
+      ]
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_30",
+      "evaluation_result": "INCORRECT",
+      "title": "The database should be updated upon the successful post request",
+      "errorMessages": [
+        "Error: expect(received).toEqual(expected) // deep equality"
+      ]
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_31",
+      "evaluation_result": "CORRECT",
+      "title": "The DELETE request to the path 'tweets/:tweetId/' without JWT token should return status code as '401' and 'Invalid JWT Token' text as a response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_32",
+      "evaluation_result": "INCORRECT",
+      "title": "The DELETE request to the path 'tweets/:tweetId/' with valid JWT token should return status code as '401' and 'Invalid Request' if the tweet doesn't belong to the user",
+      "errorMessages": [
+        "TypeError: Cannot read properties of undefined (reading 'user_id')"
+      ]
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_33",
+      "evaluation_result": "INCORRECT",
+      "title": "The DELETE request to the path 'tweets/:tweetId' with valid JWT token should return `Tweet Removed` text as a response upon success",
+      "errorMessages": [
+        "TypeError: Cannot read properties of undefined (reading 'user_id')"
+      ]
+    },
+    {
+      "test_case_id": "NJSCADIJBI_TEST_34",
+      "evaluation_result": "INCORRECT",
+      "title": "The database should be updated upon the successful delete request",
+      "errorMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality"
+      ]
+    }
+  ]
+}
